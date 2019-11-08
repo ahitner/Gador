@@ -894,3 +894,12 @@ footer .logo{
     height:auto;
   }
 }
+
+
+/* Arreglos IOS */
+.fix-nav-ios
+{
+	position: absolute !important;
+	top: 0;
+	
+}
