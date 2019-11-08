@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>GADOR - INTERNA</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+  	<link rel="stylesheet" href="css/bootstrap.css">
+  	<link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--////// -  ENCABEZADO + BARRA NAVEGACION - //////-->   
+    <header class="header bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 align-self-center text-left no-gutters">
+                <a href="index.html"><img class="logo" src="img/GDR_isologo_blanco.svg" alt="GADOR"></a>
+                </div>
+                <div class="col-sm-6 col-12 align-self-center text-center">
+                    <h1>Pagina interna</h1>
+                </div>
+                <div class="col-sm-3 align-self-center text-right">
+                    
+                </div>
+            </div>
+            <!--/row-->
+        </div>
+        <!--container-->
+    </header>
+  
+<!--////// -  INICIO BARRA NAVEGACION  - //////-->    
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
+        <div class="container-fluid">
+  <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbar1"
+    aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="animated-icon1"><span></span><span></span><span></span></div>
+  </button>
+            <a data-toggle="collapse" href="#buscador" data-toggle="collapse" class=" align-items-center btn-m-buscar" ><div class="icon-search"></div></a>
+            <div class="collapse navbar-collapse" id="navbar1">
+                <ul class="navbar-nav">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Documentos</a></li>
+                  <li><a href="#">Aplicaciones</a></li>
+                  <li><a href="#">Muestras</a></li>
+                  <li><a href="#">Accesos</a></li>
+                  <li><a href="#">Contenidos</a></li> 
+                  <a data-toggle="collapse" href="#buscador" role="button" aria-expanded="false" aria-controls="buscador" class="btn-buscar align-items-center" href="#"><div class="icon-search"></div></a>
+                </ul>
+                 
+
+            </div><!-- CIERRE NAVBAR -->
+        </div>
+        <!--container end-->
+<!--////// - PANEL BUSCADOR - //////--> 
+<div class="collapse" id="buscador">
+   <div class="buscador">
+      <div class="container">
+         <form class="row" action="">
+            <div class="col-xl-10">
+               <input type="text" name="name" required="required" placeholder="¿Qué estás buscando?">
+            </div>
+            <div class="col-xl-2">
+               <input type="submit" name="submit" value="BUSCAR" class="btn btn-send">
+            </div>
+         </form> 
+         </div>
+      </div><!-- container -->
+   </div>
+<!--////// - FIN PANEL BUSCADOR - //////-->
+    </nav>
+    <!--////// -  FIN BARRA NAVEGACION  - //////-->
+<!--////// -  FIN ENCABEZADO + BARRA NAVEGACION  - //////-->     
+<!--////// - INICIO SECCION CON CARROUSEL  - //////--> 
+<section class="section-1">
+
+ <div class="bg-header">
+    <img class="img-fluid" src="img/bg-interna.jpg" alt="">
+ </div>
+
+</section>
+  
+<!--////// -  INICIO DE CONTENIDOS  - //////--> 
+
+<section class="container interna">
+
+</section>
+<!--////// -  INICIO FOOTER  - //////--> 
+<footer>
+<!-- Inicio Scroll up -->
+<a href="#" class="scrollup" title="back to top"><i class="icon-up-open-big"></i></a>
+<!-- Fin Scroll up -->
+<div class="container">
+<div class="row align-items-center">
+  <div class="col-lg-6-8 col-8 my-auto">
+    <p>Copyright 2019 Gador S.A. Todos los Derechos Reservados.</p>
+  </div>
+  <div class="col-lg-4 col-4">
+    <img class="logo float-right" src="img/GDR_isologo_blanco.svg" alt="GADOR">
+  </div>  
+</div>
+</div>
+</footer>
+<!--////// -  FIN FOOTER  - //////--> 
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/jpopper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+// Cambio de la opacidad de la barra de nagegación para facilitar la lectura
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 200) {
+        $(".navbar").addClass("darknav");
+    } else {
+        $(".navbar").removeClass("darknav");
+    }
+});
+  $('.first-button').on('click', function () {
+
+    $('.animated-icon1').toggleClass('open');
+  });
+  $('.second-button').on('click', function () {
+
+    $('.animated-icon2').toggleClass('open');
+  });
+  $('.third-button').on('click', function () {
+
+    $('.animated-icon3').toggleClass('open');
+
+});
+</script>
+</body>
+</html>
