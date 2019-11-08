@@ -13,6 +13,14 @@
  * CARROUSEL.......................Ajustes basicos para el Slider.
  * BREAKPOINTS.....................Ajustes para Mobiles.
  */
+ 
+ /* Arreglos IOS */
+.nav-ios
+{
+	position: absolute;
+	top: 0;
+	
+}
 
 /*------------------------------------*\
     RESETS BASICOS
@@ -896,10 +904,3 @@ footer .logo{
 }
 
 
-/* Arreglos IOS */
-.fix-nav-ios
-{
-	position: absolute !important;
-	top: 0;
-	
-}
